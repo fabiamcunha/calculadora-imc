@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>calculadora imc</title>
+</head>
+<body>
+	
+	<div class="content">
+		<div class="form">
+			<div class="title">Calculadora IMC</div>
+			<div class="input">
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome"id="nome">
+			</div>
+			<div class="input">
+				<label for="peso"> Peso:</label>
+				<input type="number" name="peso"id="peso">
+			</div>
+			<div class="input">
+				<label for="altura"> Altura:</label>
+				<input type="number" name="altura"id="altura">
+			</div>
+			<input type="submit" value="calcular" onclick="calc()" >
+			<div class="res"id="resultado"></div>
+		</div>	
+	</div>
+		
+	<script>
+		function calc(){
+				var nome = document.getElementById('nome').value;
+				var peso = parseFloat(document.getElementById('peso').value);
+				var altura = parseFloat(document.getElementById('altura').value);
+				var imc = document.getElementById('resultado');
+
+				if(nome !=="" && peso!=="" && altura !==""){
+				var resul=(peso/(altura*altura)).toFixed(2)
+				var classificar=""
+				if(resul< 18.5){
+					classificar="baixo peso."
+				} else if( resul<24.9){
+					classificar="peso normal."
+				}else if( resul<29.9){
+					classificar=" sobre peso."
+				}else if( resul<34.9){
+					classificar="obesidade grau 1."
+				}else if( resul<39.9){
+					classificar="Obesidade grau 2."
+				} else if(resul >= 40){
+					classificar="Obesidade grau 3."
+				}	
+				imc.innerHTML=` Ola ${nome} seu indice é de ${resul} e vc esta ${classificar}`;	
+			}
+			else{
+				
+			
+				imc.innerHTML='preencha todos os campos'
+			}
+		}
+</script>
+</body>
+</html>
