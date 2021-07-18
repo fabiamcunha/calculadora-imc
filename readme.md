@@ -1,9 +1,10 @@
-calculador de massa corporal 
+<h1>CALCULADORA IMC</h1>
 
-
-
-o sistema foi criado para pegar o nome, peso e altura do cliente fazer a conta e mostrar
-a quantidade de gordura a pessoa possui e em que estagio ele se encontra de acordo com a tabela
-do ministerio da saúde . antes de fazer  verificação o sistema confere se nao a nenhum campo em branco
-
+<p>projeto simples para colocar em pratica os conhecimentos em comando decisão em javascript  </p>
+	<h2>Tecnicas e linguagem aplicadas</h2>
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JAVASCRIPT	</li>
+</ul>
 

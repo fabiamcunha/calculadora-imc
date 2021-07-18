@@ -39,7 +39,7 @@ header{
 
 .form{
     width: 400px;
-    height: 450px;
+    height: 500px;
     background-image:linear-gradient(red,yellow);
     border-radius: 20px;
      box-shadow:  5px 2px 30px  rgba(54,54,54,.8);
@@ -74,12 +74,19 @@ input{
     font-size: 18px;
     text-align: center;
 }
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+}
 button{
+
     height: 30px;
     background-color: #000;
     color: #fff;
-    margin:12px 30px;
-    width:80%;
+    margin: 15px 6px ;
+    width:30%;
     font-size: 16px;
     outline: none;
     border:none;
